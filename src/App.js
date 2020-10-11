@@ -4,17 +4,23 @@ import "./App.css";
 import Header from "./components/header";
 import Main from "./components/main";
 import Search from "./components/search";
-import Cards from "./components/cards";
+import CardsJolby from "./components/cards";
 import Footer from "./components/footer";
+import Context from "./context";
+import Container from "react-bootstrap/Container";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Search />
-      <Cards />
-      <Footer />
+      <Context.Provider>
+        <Header />
+        <Main />
+        <Container fluid="md">
+          <Search />
+          <CardsJolby />
+        </Container>
+        <Footer />
+      </Context.Provider>
     </div>
   );
 }
