@@ -1,0 +1,10 @@
+.header {
+  background-color: #89bfd2;
+}
+
+.header__link {
+  color: white;
+  font-weight: 900;
+  font-family: "Montserrat" sans-serif;
+  text-transform: uppercase;
+}

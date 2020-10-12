@@ -13,14 +13,15 @@ const JobCard = ({
 }) => {
   return (
     <div id={`$job-{id}`} className="individual-card">
+      <div className="bg=#fa8669">
       <Card style={{ width: "18rem" }}>
         <div>
           <Card.Img variant="top" src="holder.js/100px180" />
           <p>{Time}</p>
           <Card.Title>{title || ""}</Card.Title>
-          <p>{company || ""}</p>
-          <p>{Location || ""}</p>
-          <p>Technologies</p>
+          <p className="card-subtitle">{company || ""}</p>
+          <p className="card-mn">{Location || ""}</p>
+          <p className="card-bd">Technologies</p>
         </div>
         <div>
           {Tags.map((tag) => (
@@ -30,12 +31,13 @@ const JobCard = ({
           ))}
         </div>
         <div>
-          <p>Go to the offer!</p>
+          <p className="card-ft">Go to the offer!</p>
           <a href={applyLink} target="blank">
             <Button variant="primary">See more</Button>
           </a>
         </div>
       </Card>
+      </div>
     </div>
   );
 };
