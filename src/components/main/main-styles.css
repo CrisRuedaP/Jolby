@@ -1,7 +1,8 @@
 .jumbotron {
   background-color: #89bfd2;
   height: 400px;
-  padding: 2rem 2rem;
+  padding: 2rem 0;
+  margin-bottom: 0;
 }
 
 .text__hero {

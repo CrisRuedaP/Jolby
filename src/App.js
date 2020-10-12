@@ -15,8 +15,8 @@ function App() {
       <Context.Provider>
         <Header />
         <Main />
+        <Search />
         <Container fluid="md">
-          <Search />
           <CardsJolby />
         </Container>
         <Footer />

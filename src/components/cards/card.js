@@ -1,42 +1,54 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import logo from "../../assets/images/logo.png";
+import { setDate } from "../../utils";
 
 const JobCard = ({
   title,
   id,
   company,
-  Location,
-  Tags = [],
-  Time,
+  location,
+  tags = [],
+  time,
   applyLink,
 }) => {
   return (
-    <div id={`$job-{id}`} className="individual-card">
+    <div id={`job-${id}`} className="individual-card">
       <div className="bg=#fa8669">
-      <Card style={{ width: "18rem" }}>
-        <div>
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <p>{Time}</p>
-          <Card.Title>{title || ""}</Card.Title>
-          <p className="card-subtitle">{company || ""}</p>
-          <p className="card-mn">{Location || ""}</p>
-          <p className="card-bd">Technologies</p>
-        </div>
-        <div>
-          {Tags.map((tag) => (
-            <Button type="submit" size="sm">
-              {tag}
-            </Button>
-          ))}
-        </div>
-        <div>
-          <p className="card-ft">Go to the offer!</p>
-          <a href={applyLink} target="blank">
-            <Button variant="primary">See more</Button>
-          </a>
-        </div>
-      </Card>
+        <Card>
+          <div>
+            <div className="individual-card__header">
+              <div className="individual-card__logo">
+                <img src={logo} alt={title} />
+              </div>
+              <span>
+                <b>{setDate(time) || null}</b>
+              </span>
+            </div>
+            <Card.Title>{title || ""}</Card.Title>
+            <p className="card-subtitle">{company || ""}</p>
+            <p className="card-mn">{location || ""}</p>
+          </div>
+          <b className="card-bd">Technologies:</b>
+          <div className="individual-card__tags">
+            {tags.map((tag, index) => (
+              <Button
+                key={index}
+                variant="outline-dark"
+                type="submit"
+                size="sm"
+              >
+                {tag}
+              </Button>
+            ))}
+          </div>
+          <div>
+            <a href={applyLink} target="blank">
+              <Button variant="dark">See offer</Button>
+            </a>
+          </div>
+        </Card>
       </div>
     </div>
   );
