@@ -13,10 +13,11 @@ const Main = () => {
         <Container>
           <Row>
             <Col xs lg="6">
+              <h2 className="title__hero">Jobs for Holbies!</h2>
               <p className="text__hero">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur pharetra pharetra nibh, nec consequat felis porta ac.
-                Fusce sit amet augue convallis, euismod enim quis, rutrum velit.
+                The platform to find remote jobs that match perfect with your
+                profile. Created with love by your peers from Holberton
+                Medellin.
               </p>
             </Col>
             <Col xs lg="6">

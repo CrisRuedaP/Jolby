@@ -1,103 +1,183 @@
 {
-  "entries": [
-    {
-      "title": "Junio Devops Engineer",
-      "id": "98114",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    },
-    {
-      "title": "Senior Backend Engineer",
-      "id": "98115",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    },
-    {
-      "title": "Senior Frontend Engineer",
-      "id": "98116",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    },
-    {
-      "title": "Software Engineer",
-      "id": "98117",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    },
-    {
-      "title": "Devops Engineer",
-      "id": "98118",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    },
-    {
-      "title": "Web Developer",
-      "id": "98119",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    },
-    {
-      "title": "Backend Engineer",
-      "id": "98120",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    },
-    {
-      "title": "Devops Engineer",
-      "id": "98121",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    },
-    {
-      "title": "Web Developer",
-      "id": "98122",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    },
-    {
-      "title": "Backend Engineer",
-      "id": "98123",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    },
-    {
-      "title": "Frontend Engineer",
-      "id": "98124",
-      "company": "Modal",
-      "location": "Worlwide",
-      "tags": ["devops", "senior", "engineer", "devops"],
-      "time": "2020-09-21T10:18:52-07:00",
-      "applyLink": "https://remoteok.io/l/98114"
-    }
-  ]
+	"entries": [{
+			"title": "Junior Full Stack Developer",
+			"id": "3671860242",
+			"company": "Summitworks Technologies",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/259205/summitworks-technologies-squarelogo.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=983182&s=149&guid=000001752e6ccc39953eb412a0ce7c05&src=GD_JOB_AD&t=SRFJ&vt=w&ea=1&cs=1_eb647cf6&cb=1602801684014&jobListingId=3671860242",
+			"tags": ["Python", "C++", "C#", "Java", "SQL", "Full Stack", "Frontend"]
+		},
+		{
+			"title": "Junior AWS Engineer",
+			"id": "3671859495",
+			"company": "Summitworks Technologies",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/259205/summitworks-technologies-squarelogo.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=983182&s=149&guid=000001752e6ccc39953eb412a0ce7c05&src=GD_JOB_AD&t=SRFJ&vt=w&ea=1&cs=1_8ba6083d&cb=1602801684014&jobListingId=3671859495",
+			"tags": ["Python", "Java", "SQL", "NoSQL", "AWS"]
+		},
+		{
+			"title": "Engineering Intern",
+			"id": "3654170097",
+			"company": "LogRhythm",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/414483/logrhythm-squarelogo-1423849548634.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1006323&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&cs=1_6258a0d9&cb=1602801684015&jobListingId=3654170097",
+			"tags": ["Java"]
+		},
+		{
+			"title": "Junior Front-End Developer",
+			"id": "3710846674",
+			"company": "Bloomfire",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/459235/bloomfire-squarelogo-1381429419172.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=8095&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&ea=1&cs=1_25143f84&cb=1602801684016&jobListingId=3710846674",
+			"tags": ["JS", "React", "Frontend"]
+		},
+		{
+			"title": "Junior Data Scientist",
+			"id": "3687405310",
+			"company": "CORMAC",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/441229/cormac-squarelogo-1446012505044.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=4348&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&ea=1&cs=1_5f61dde4&cb=1602801684017&jobListingId=3687405310",
+			"tags": ["Python", "Java", "SQL", "AWS"]
+		},
+		{
+			"title": "Junior Front End Developer",
+			"id": "3671193061",
+			"company": "EVERFI",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/421135/everfi-squarelogo-1575493338229.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1119585&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&ea=1&cs=1_eb6511df&cb=1602801684019&jobListingId=3671193061",
+			"tags": ["Javascript", "JS", "React", "HTML", "CSS", "Frontend"]
+		},
+		{
+			"title": "Junior Full Stack Developer",
+			"id": "3671860242",
+			"company": "Summitworks Technologies",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/259205/summitworks-technologies-squarelogo.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=983182&s=149&guid=000001752e6ccc39953eb412a0ce7c05&src=GD_JOB_AD&t=SRFJ&vt=w&ea=1&cs=1_eb647cf6&cb=1602801684014&jobListingId=3671860242",
+			"tags": ["Python", "C++", "C#", "Java", "SQL", "Full Stack", "Frontend"]
+		},
+		{
+			"title": "Junior AWS Engineer",
+			"id": "3671859495",
+			"company": "Summitworks Technologies",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/259205/summitworks-technologies-squarelogo.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=983182&s=149&guid=000001752e6ccc39953eb412a0ce7c05&src=GD_JOB_AD&t=SRFJ&vt=w&ea=1&cs=1_8ba6083d&cb=1602801684014&jobListingId=3671859495",
+			"tags": ["Python", "Java", "SQL", "NoSQL", "AWS"]
+		},
+		{
+			"title": "Engineering Intern",
+			"id": "3654170097",
+			"company": "LogRhythm",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/414483/logrhythm-squarelogo-1423849548634.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1006323&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&cs=1_6258a0d9&cb=1602801684015&jobListingId=3654170097",
+			"tags": ["Java"]
+		},
+		{
+			"title": "Junior Front-End Developer",
+			"id": "3710846674",
+			"company": "Bloomfire",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/459235/bloomfire-squarelogo-1381429419172.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=8095&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&ea=1&cs=1_25143f84&cb=1602801684016&jobListingId=3710846674",
+			"tags": ["JS", "React", "Frontend"]
+		},
+		{
+			"title": "Junior Data Scientist",
+			"id": "3687405310",
+			"company": "CORMAC",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/441229/cormac-squarelogo-1446012505044.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=4348&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&ea=1&cs=1_5f61dde4&cb=1602801684017&jobListingId=3687405310",
+			"tags": ["Python", "Java", "SQL", "AWS"]
+		},
+		{
+			"title": "Junior Front End Developer",
+			"id": "3671193061",
+			"company": "EVERFI",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/421135/everfi-squarelogo-1575493338229.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1119585&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&ea=1&cs=1_eb6511df&cb=1602801684019&jobListingId=3671193061",
+			"tags": ["Javascript", "JS", "React", "HTML", "CSS", "Frontend"]
+		},
+		{
+			"title": "Junior Full Stack Developer",
+			"id": "3671860242",
+			"company": "Summitworks Technologies",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/259205/summitworks-technologies-squarelogo.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=983182&s=149&guid=000001752e6ccc39953eb412a0ce7c05&src=GD_JOB_AD&t=SRFJ&vt=w&ea=1&cs=1_eb647cf6&cb=1602801684014&jobListingId=3671860242",
+			"tags": ["Python", "C++", "C#", "Java", "SQL", "Full Stack", "Frontend"]
+		},
+		{
+			"title": "Junior AWS Engineer",
+			"id": "3671859495",
+			"company": "Summitworks Technologies",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/259205/summitworks-technologies-squarelogo.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=983182&s=149&guid=000001752e6ccc39953eb412a0ce7c05&src=GD_JOB_AD&t=SRFJ&vt=w&ea=1&cs=1_8ba6083d&cb=1602801684014&jobListingId=3671859495",
+			"tags": ["Python", "Java", "SQL", "NoSQL", "AWS"]
+		},
+		{
+			"title": "Engineering Intern",
+			"id": "3654170097",
+			"company": "LogRhythm",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/414483/logrhythm-squarelogo-1423849548634.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1006323&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&cs=1_6258a0d9&cb=1602801684015&jobListingId=3654170097",
+			"tags": ["Java"]
+		},
+		{
+			"title": "Junior Front-End Developer",
+			"id": "3710846674",
+			"company": "Bloomfire",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/459235/bloomfire-squarelogo-1381429419172.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=8095&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&ea=1&cs=1_25143f84&cb=1602801684016&jobListingId=3710846674",
+			"tags": ["JS", "React", "Frontend"]
+		},
+		{
+			"title": "Junior Data Scientist",
+			"id": "3687405310",
+			"company": "CORMAC",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/441229/cormac-squarelogo-1446012505044.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=4348&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&ea=1&cs=1_5f61dde4&cb=1602801684017&jobListingId=3687405310",
+			"tags": ["Python", "Java", "SQL", "AWS"]
+		},
+		{
+			"title": "Junior Front End Developer",
+			"id": "3671193061",
+			"company": "EVERFI",
+			"location": "Worlwide",
+			"time": "2020-09-21T10:18:52-07:00",
+			"image": "https://media.glassdoor.com/sql/421135/everfi-squarelogo-1575493338229.png",
+			"applyLink": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1119585&s=58&guid=000001752e6ccc399a3f9ea098beebe1&src=GD_JOB_AD&t=SR&vt=w&ea=1&cs=1_eb6511df&cb=1602801684019&jobListingId=3671193061",
+			"tags": ["Javascript", "JS", "React", "HTML", "CSS", "Frontend"]
+		}
+	]
 }

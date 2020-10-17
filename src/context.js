@@ -12,6 +12,7 @@ export const Context = createContext();
  */
 const Provider = ({ children }) => {
   const [jobs, setJobs] = useState();
+  const [query, setQuery] = useState([]);
 
   useEffect(() => {
     getJobs()
@@ -25,6 +26,8 @@ const Provider = ({ children }) => {
 
   const value = {
     jobs,
+    query,
+    setQuery,
   };
 
   return <Context.Provider value={value}>{children}</Context.Provider>;

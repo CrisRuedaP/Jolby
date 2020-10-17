@@ -7,12 +7,33 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const CardsJolby = () => {
-  const { jobs } = useContext(Context);
+  const { jobs, query } = useContext(Context);
   const [fetchedjobs, setJobs] = useState();
 
   useEffect(() => {
     setJobs(jobs);
-  }, [jobs]);
+
+    if (query.length > 0) {
+      let filtered = [];
+
+      if (jobs) {
+        const entries = jobs.entries;
+
+        filtered = entries.filter((job) => {
+          const isSearched = findCommonElements(job.tags, query);
+          if (isSearched) {
+            return job;
+          }
+          return null;
+        });
+
+        setJobs({ entries: filtered });
+      }
+    }
+  }, [jobs, query]);
+
+  const findCommonElements = (arr1, arr2) =>
+    arr1.some((item) => arr2.includes(item));
 
   const renderCards = ({ entries }) =>
     (entries || []).map((job, index) => (

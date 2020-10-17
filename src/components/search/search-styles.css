@@ -3,3 +3,11 @@
   padding: 0 0 2rem;
   margin-bottom: 1rem;
 }
+
+.select__value-container--is-multi {
+  height: 3rem !important;
+}
+
+.select__multi-value {
+  border-radius: 10px !important;
+}

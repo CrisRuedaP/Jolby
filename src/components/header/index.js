@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Logo from "../../assets/images/logo.png";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Header = () => {
   return (
@@ -14,11 +15,9 @@ const Header = () => {
             <img src={Logo} width={"100"} alt={"logo"} />
           </Navbar.Brand>
           <Nav className="justify-content-end" activeKey="/home">
-            <Nav.Item>
-              <Nav.Link eventKey="link-2">
-                <span className="header__link">Find Jobs</span>
-              </Nav.Link>
-            </Nav.Item>
+            <span className="header__link">
+              <Link to={"/#cards-anchor"}>Find Jobs</Link>
+            </span>
           </Nav>
         </Container>
       </Navbar>

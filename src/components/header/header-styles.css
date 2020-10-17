@@ -2,6 +2,10 @@
   background-color: #89bfd2;
 }
 
+a:link, a:visited {
+  color: white;
+}
+
 .header__link {
   color: white;
   font-weight: 900;

@@ -1,24 +1,50 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./search-styles.css";
-import FormControl from "react-bootstrap/FormControl";
-import InputGroup from "react-bootstrap/InputGroup";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import { Context } from "../../context";
+import Select from "react-select";
+import { tags } from "./options";
 
 const Search = () => {
+  const { setQuery } = useContext(Context);
+
+  const handleInput = (value = []) => {
+    let values = (value || []).map((item) => item.value);
+    setQuery(values);
+  };
+
+  const selectorTags = tags;
+
+  const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      borderBottom: "1px dotted rgba(250, 134, 105, 0.3)",
+      color: state.isSelected ? "red" : "#666666",
+      fontSize: "0.8rem",
+      padding: 10,
+    }),
+    singleValue: (provided, state) => {
+      const opacity = state.isDisabled ? 0.5 : 1;
+      const transition = "opacity 300ms";
+
+      return { ...provided, opacity, transition };
+    },
+  };
+
   return (
     <div className="search">
       <Container fluid="md">
-        <InputGroup className="mb-3">
-          <FormControl
-            placeholder="Search Offer"
-            aria-label="Search Offer"
-            aria-describedby="basic-addon2"
-          />
-          <InputGroup.Append>
-            <Button variant="outline-secondary">Search</Button>
-          </InputGroup.Append>
-        </InputGroup>
+        <Select
+          //defaultValue={[selectorTags[0]]}
+          styles={customStyles}
+          isMulti
+          name="colors"
+          placeholder={"Select your search preferences"}
+          options={selectorTags}
+          className="basic-multi-select"
+          classNamePrefix="select"
+          onChange={handleInput}
+        />
       </Container>
     </div>
   );
