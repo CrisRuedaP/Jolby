@@ -5,7 +5,7 @@ const getJobs = async () => {
   };
 
   const result = await fetch(
-    "https://run.mocky.io/v3/fc0b8c76-27af-4860-93cd-fcaf0491c073",
+    "https://us-central1-jolby-dda21.cloudfunctions.net/app/api/v1/jobs",
     requestOptions
   )
     .then((response) => response.json())

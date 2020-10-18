@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { setDate } from "../../utils";
+//import { setDate } from "../../utils";
 
 const JobCard = ({
   title,
@@ -23,11 +23,14 @@ const JobCard = ({
                 <img src={image} alt={title} />
               </div>
               <span>
-                <b>{setDate(time) || null}</b>
+                <b>{time || null}</b>
               </span>
             </div>
             <Card.Title>{title || ""}</Card.Title>
-            <p className="card-subtitle">{company || ""}</p>
+            <p className="card-subtitle">
+              <b>Company:</b>
+              <br /> {company || ""}
+            </p>
             <p className="card-mn">{location || ""}</p>
           </div>
           <b className="card-bd">Technologies:</b>
@@ -45,7 +48,9 @@ const JobCard = ({
           </div>
           <div className="individual-card__btn-container">
             <a href={applyLink} target="blank">
-              <Button variant="dark" size="sm">See offer</Button>
+              <Button variant="dark" size="sm">
+                See offer
+              </Button>
             </a>
           </div>
         </Card>

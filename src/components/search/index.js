@@ -3,7 +3,7 @@ import "./search-styles.css";
 import Container from "react-bootstrap/Container";
 import { Context } from "../../context";
 import Select from "react-select";
-import { tags } from "./options";
+import { techs } from "./options";
 
 const Search = () => {
   const { setQuery } = useContext(Context);
@@ -13,7 +13,7 @@ const Search = () => {
     setQuery(values);
   };
 
-  const selectorTags = tags;
+  const selectorTags = techs;
 
   const customStyles = {
     option: (provided, state) => ({
