@@ -39,7 +39,7 @@ const Search = () => {
           styles={customStyles}
           isMulti
           name="colors"
-          placeholder={"Select your search preferences"}
+          placeholder={"Select Job title or Technology"}
           options={selectorTags}
           className="basic-multi-select"
           classNamePrefix="select"
