@@ -3,7 +3,6 @@ import "./cards-styles.css";
 import { Context } from "../../context";
 import JobCard from "./card";
 import Loader from "../loader";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import List from "../List";
 
@@ -47,8 +46,11 @@ const CardsJolby = () => {
 
   return (
     <div className="cards">
-      <Row>{fetchedjobs ? renderCards(fetchedjobs) : renderLoader()}</Row>
-      <List />
+      {fetchedjobs ? (
+        <List currentJobs={fetchedjobs} cards={renderCards} />
+      ) : (
+        renderLoader()
+      )}
     </div>
   );
 };

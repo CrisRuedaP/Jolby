@@ -1,31 +1,77 @@
 import React, { useState, useEffect } from "react";
-import useInfiniteScroll from "../../hooks/useInfiniteScroll";
+import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import { useScrollPosition } from "../../hooks/useTrackingScroll";
+import "./list-styles.css";
 
-const List = () => {
-  const [listItems, setListItems] = useState(
-    Array.from(Array(30).keys(), (n) => n + 1)
-  );
-  const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
+const List = ({ currentJobs, cards }) => {
+  const jobs = currentJobs;
+  const [splitted, setSplitted] = useState([]);
+  const [count, setCount] = useState(1);
+  const [listItems, setListItems] = useState([]);
+  const [hideOnScroll, setHideOnScroll] = useState(true);
 
-  function fetchMoreListItems() {
-    setTimeout(() => {
-      setListItems((prevState) => [
-        ...prevState,
-        ...Array.from(Array(20).keys(), (n) => n + prevState.length + 1),
-      ]);
-      setIsFetching(false);
-    }, 2000);
-  }
+  useEffect(() => {
+    if (jobs) {
+      splitArray();
+    }
+  }, [jobs]);
+
+  const getScrollPercent = () => {
+    const h = document.documentElement,
+      b = document.body,
+      st = "scrollTop",
+      sh = "scrollHeight";
+    const result =
+      ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+    return Math.trunc(result);
+  };
+
+  useScrollPosition(() => {
+    const percentage = getScrollPercent();
+
+    percentage === 100 ? setHideOnScroll(false) : setHideOnScroll(true);
+  }, [hideOnScroll]);
+
+  const fetchMoreListItems = () => {
+    if (count <= splitted.length) {
+      setCount(count + 1);
+    }
+    if (count === splitted.length) return;
+
+    const list = listItems.concat(splitted[count]);
+    setListItems(list);
+    setHideOnScroll(true);
+  };
+
+  const splitArray = () => {
+    const chunkSize = 12;
+    const arr = jobs ? jobs : [];
+    const groups = arr
+      .map((e, i) => {
+        return i % chunkSize === 0 ? arr.slice(i, i + chunkSize) : null;
+      })
+      .filter((e) => {
+        return e;
+      });
+    setSplitted(groups);
+    setListItems(groups[0]);
+  };
 
   return (
-    <>
-      <ul className="list-group mb-2">
-        {listItems.map((listItem) => (
-          <li className="list-group-item">List Item {listItem}</li>
-        ))}
-      </ul>
-      {isFetching && "Fetching more list items..."}
-    </>
+    <div className={"list"}>
+      <Row>{listItems ? cards(listItems) : "loading"}</Row>
+      {!hideOnScroll && (
+        <Button
+          variant="outline-secondary"
+          className="list__button"
+          disabled={!splitted || count === splitted.length}
+          onClick={fetchMoreListItems}
+        >
+          {count === splitted.length ? "All offers were loaded" : "Load More"}
+        </Button>
+      )}
+    </div>
   );
 };
 

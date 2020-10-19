@@ -1,0 +1,17 @@
+.list {
+}
+
+.list__button {
+  position: fixed;
+  width: 200px;
+  bottom: 30%;
+  left: calc(90% - 50%);
+  z-index: 99;
+  color: #fa8669;
+  border: 1px solid #fa8669;
+}
+
+.list__button:hover {
+  background-color: #fa8669;
+  border: 1px solid #fa8669;
+}
