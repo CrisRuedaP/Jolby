@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./main-styles.css";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from 'react-bootstrap/Button'
+import Button from "react-bootstrap/Button";
 import Banner from "../../assets/images/light.png";
-import Icon_google from "../../assets/images/google.png"
+import Icon_google from "../../assets/images/google.png";
+import { app, googleAuthProvider } from "../../firebaseConfig";
+import { Context } from "../../context";
 
 const Main = () => {
+  const { user, logued } = useContext(Context);
+  const [error, setError] = useState("");
+
+  console.log(user, logued);
+
+  const socialLogin = async () => {
+    console.log("papa");
+    await app
+      .auth()
+      .signInWithPopup(googleAuthProvider)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+
   return (
     <div className="main">
       <Jumbotron>
@@ -21,7 +41,12 @@ const Main = () => {
                 profile. Created with love by your peers from Holberton
                 Medellin.
               </p>
-              <Button variant="dark"><img className="auth-img" src={Icon_google} alt={"icon"}/>Login With Google</Button>{' '}
+              {!user && (
+                <Button variant="dark" onClick={socialLogin}>
+                  <img className="auth-img" src={Icon_google} alt={"icon"} />
+                  Login With Google
+                </Button>
+              )}
             </Col>
             <Col className="d-none d-md-block d-lg-block" lg="6">
               <div className="main__banner">
