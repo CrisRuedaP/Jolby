@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import getJobs from "./services/getJobs";
+import { app } from "./firebaseConfig";
 
 // A New instace of React.createContext
 export const Context = createContext();
@@ -14,6 +15,8 @@ const Provider = ({ children }) => {
   const [jobs, setJobs] = useState();
   const [currentJobs, setCurrentJobs] = useState([]);
   const [query, setQuery] = useState([]);
+  const [user, setUser] = useState(null);
+  const [logued, setLogued] = useState(false);
 
   useEffect(() => {
     getJobs()
@@ -25,12 +28,23 @@ const Provider = ({ children }) => {
       });
   }, []);
 
+  useEffect(() => {
+    app.auth().onAuthStateChanged(function (user) {
+      setUser(user);
+      setLogued(true);
+    });
+  }, []);
+
+  //!showChild ? setUser(null) : setUser(user);
+
   const value = {
     jobs,
     query,
     currentJobs,
     setQuery,
     setCurrentJobs,
+    user,
+    logued,
   };
 
   return <Context.Provider value={value}>{children}</Context.Provider>;

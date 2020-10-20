@@ -33,6 +33,7 @@ const Footer = () => {
                 href="https://absurd.design/"
                 target="_blank"
                 className="footer-link"
+                rel="noopener noreferrer"
               >
                 Illustration Absurd Design
               </a>
@@ -52,6 +53,7 @@ const Footer = () => {
                   href="https://twitter.com/CrisRuedaP"
                   className="footer-link"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Cristina Rueda
                 </a>{" "}
@@ -60,14 +62,16 @@ const Footer = () => {
                   href="https://twitter.com/MarisolRHe"
                   className="footer-link"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Marisol Ramírez
-                </a>{" "}
-                -{" "}
+                </a>
+                -
                 <a
                   href="https://twitter.com/dalejohgi"
                   className="footer-link"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   David Hincapié
                 </a>

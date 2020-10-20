@@ -11,8 +11,29 @@
   font-weight: 900;
   font-family: "Montserrat" sans-serif;
   text-transform: uppercase;
+  padding: 0 0.5rem;
+}
+
+.header__name {
+  color: white;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 0 1rem 0 0.5rem;
+}
+
+.header__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .header__link a {
   color: white;
+}
+
+.dark a {
+  color: #222326 !important;
+}
+
+.header__user img {
+  width: 1.5rem;
 }

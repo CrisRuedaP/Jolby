@@ -29,3 +29,13 @@
   width: 60%;
   margin: 0 auto;
 }
+
+.auth-img {
+  width: 18%;
+  margin-right: 0.5rem;
+  pointer-events: none;
+}
+
+.btn {
+  z-index: 99 !important;
+}

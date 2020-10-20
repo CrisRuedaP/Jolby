@@ -4,10 +4,11 @@ import { Context } from "../../context";
 import JobCard from "./card";
 import Loader from "../loader";
 import Col from "react-bootstrap/Col";
+import Alert from "react-bootstrap/Alert";
 import List from "../List";
 
 const CardsJolby = () => {
-  const { jobs, query } = useContext(Context);
+  const { jobs, query, user, logued } = useContext(Context);
   const [fetchedjobs, setJobs] = useState();
 
   useEffect(() => {
@@ -45,13 +46,19 @@ const CardsJolby = () => {
   const renderLoader = () => <Loader />;
 
   return (
-    <div className="cards">
-      {fetchedjobs ? (
-        <List currentJobs={fetchedjobs} cards={renderCards} />
+    <>
+      {logued && user ? (
+        <div className="cards">
+          {fetchedjobs ? (
+            <List currentJobs={fetchedjobs} cards={renderCards} />
+          ) : (
+            renderLoader()
+          )}
+        </div>
       ) : (
-        renderLoader()
+        <Alert variant={"info"}>Please sign up to see the offers!</Alert>
       )}
-    </div>
+    </>
   );
 };
 
