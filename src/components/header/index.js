@@ -30,7 +30,7 @@ const Header = () => {
               <Link to={"/#cards-anchor"}>Find Jobs</Link>
             </span>
             {logued && user && (
-              <span className="header__link dark">
+              <span className="header__link darky">
                 <a onClick={() => app.auth().signOut()} key="logout">
                   Sign Out
                 </a>
