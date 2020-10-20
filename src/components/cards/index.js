@@ -37,7 +37,7 @@ const CardsJolby = () => {
 
   const renderCards = (entries) =>
     (entries || []).map((job, index) => (
-      <Col key={index} xs lg="4">
+      <Col key={index} xs="12" lg="4">
         <JobCard {...job} />
       </Col>
     ));

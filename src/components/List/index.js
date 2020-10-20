@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
+import Alert from "react-bootstrap/Alert";
 import { useScrollPosition } from "../../hooks/useTrackingScroll";
 import "./list-styles.css";
 
@@ -10,6 +11,8 @@ const List = ({ currentJobs, cards }) => {
   const [count, setCount] = useState(1);
   const [listItems, setListItems] = useState([]);
   const [hideOnScroll, setHideOnScroll] = useState(true);
+
+  const isNotSplitted = splitted.length === 0 || splitted.length === 1;
 
   useEffect(() => {
     if (jobs) {
@@ -30,7 +33,7 @@ const List = ({ currentJobs, cards }) => {
   useScrollPosition(() => {
     const percentage = getScrollPercent();
 
-    percentage === 100 ? setHideOnScroll(false) : setHideOnScroll(true);
+    percentage > 85 ? setHideOnScroll(false) : setHideOnScroll(true);
   }, [hideOnScroll]);
 
   const fetchMoreListItems = () => {
@@ -58,19 +61,31 @@ const List = ({ currentJobs, cards }) => {
     setListItems(groups[0]);
   };
 
+  const renderMessage = (message, variant) => (
+    <Alert variant={variant}>{message}</Alert>
+  );
+
+  console.log(listItems);
+
   return (
     <div className={"list"}>
-      <Row>{listItems ? cards(listItems) : "loading"}</Row>
-      {!hideOnScroll && (
-        <Button
-          variant="outline-secondary"
-          className="list__button"
-          disabled={!splitted || count === splitted.length}
-          onClick={fetchMoreListItems}
-        >
-          {count === splitted.length ? "All offers were loaded" : "Load More"}
-        </Button>
-      )}
+      <Row>
+        {listItems
+          ? cards(listItems)
+          : renderMessage("No offers available.", "warning")}
+      </Row>
+      <div className={"list__btn-container"}>
+        {!hideOnScroll && !isNotSplitted && (
+          <Button
+            variant="outline-secondary"
+            className="list__button"
+            disabled={!splitted || count === splitted.length}
+            onClick={fetchMoreListItems}
+          >
+            {count === splitted.length ? "All offers were loaded" : "Load More"}
+          </Button>
+        )}
+      </div>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const Main = () => {
       <Jumbotron>
         <Container>
           <Row>
-            <Col xs lg="6">
+            <Col xs={12} lg={6}>
               <h2 className="title__hero">Jobs for Holbies!</h2>
               <p className="text__hero">
                 The platform to find remote jobs that match perfect with your
@@ -20,7 +20,7 @@ const Main = () => {
                 Medellin.
               </p>
             </Col>
-            <Col xs lg="6">
+            <Col className="d-none d-md-block d-lg-block" lg="6">
               <div className="main__banner">
                 <img src={Banner} alt={"ilustration"} />
               </div>

@@ -1,11 +1,11 @@
-.list {
+.alert {
+  width: 100%;
+  text-align: center;
 }
 
 .list__button {
-  position: fixed;
   width: 200px;
   bottom: 30%;
-  left: calc(90% - 50%);
   z-index: 99;
   color: #fa8669;
   border: 1px solid #fa8669;
@@ -14,4 +14,11 @@
 .list__button:hover {
   background-color: #fa8669;
   border: 1px solid #fa8669;
+}
+
+.list__btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
 }
