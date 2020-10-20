@@ -31,3 +31,11 @@
 .footer__icon-right {
   width: 5%;
 }
+
+.footer-link {
+  color: #f98669; 
+}
+
+.footer-link:hover {
+  color: #f98669;
+}
