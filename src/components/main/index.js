@@ -28,24 +28,6 @@ const Main = () => {
       });
   };
 
-  const userReference =  firestore.doc('Users/${userAuth.uid}');
-  const snapShot =  await userReference.get();
-  if(!snapShot.exists) {
-    const {displayName, email} = userAuth;
-    const createdAt = new Date();
-    try {
-      await userReference.set({
-        displayName,
-        email,
-        photoURL,
-        createdAt,
-        'rol': 'student',
-      })
-    } catch (error) {
-        console.log(error)
-    }
-  }
-
   return (
     <div className="main">
       <Jumbotron>
