@@ -29,13 +29,11 @@ const Provider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    app.auth().onAuthStateChanged(function (user) {
+    app.auth().onAuthStateChanged((user) => {
       setUser(user);
       setLogued(true);
     });
   }, []);
-
-  //!showChild ? setUser(null) : setUser(user);
 
   const value = {
     jobs,
