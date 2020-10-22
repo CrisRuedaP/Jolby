@@ -6,10 +6,18 @@ import Loader from "../loader";
 import Col from "react-bootstrap/Col";
 import Alert from "react-bootstrap/Alert";
 import List from "../List";
+import Csv from "../csv";
 
 const CardsJolby = () => {
   const { jobs, query, user, logued } = useContext(Context);
   const [fetchedjobs, setJobs] = useState();
+  const [csvData, setCsvData] = useState([]);
+
+  const convertData = (data = []) =>
+    data.map((item) => {
+      let { company, title, applyLink } = item;
+      return Object.values({ company, title, applyLink });
+    });
 
   useEffect(() => {
     setJobs(jobs);
@@ -33,6 +41,11 @@ const CardsJolby = () => {
     }
   }, [jobs, query]);
 
+  useEffect(() => {
+    let formatedData = convertData(fetchedjobs);
+    setCsvData(formatedData);
+  }, [fetchedjobs]);
+
   const findCommonElements = (arr1, arr2) =>
     arr1.some((item) => arr2.includes(item));
 
@@ -50,7 +63,10 @@ const CardsJolby = () => {
       {logued && user ? (
         <div className="cards">
           {fetchedjobs ? (
-            <List currentJobs={fetchedjobs} cards={renderCards} />
+            <>
+              <Csv data={csvData} />
+              <List currentJobs={fetchedjobs} cards={renderCards} />
+            </>
           ) : (
             renderLoader()
           )}

@@ -17,7 +17,6 @@ const Main = () => {
   console.log(user, logued);
 
   const socialLogin = async () => {
-    console.log("papa");
     await app
       .auth()
       .signInWithPopup(googleAuthProvider)

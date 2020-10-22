@@ -65,8 +65,6 @@ const List = ({ currentJobs, cards }) => {
     <Alert variant={variant}>{message}</Alert>
   );
 
-  console.log(listItems);
-
   return (
     <div className={"list"}>
       <Row>
