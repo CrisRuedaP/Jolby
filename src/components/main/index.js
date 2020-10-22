@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./main-styles.css";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
@@ -9,6 +9,7 @@ import Banner from "../../assets/images/light.png";
 import Icon_google from "../../assets/images/google.png";
 import { app, googleAuthProvider } from "../../firebaseConfig";
 import { Context } from "../../context";
+import { createUserRegister } from "../../services/saveDb";
 
 const Main = () => {
   const { user, logued } = useContext(Context);
@@ -27,6 +28,14 @@ const Main = () => {
         setError(error.message);
       });
   };
+
+  useEffect(() => {
+    if (!logued) return;
+    if (user) {
+      let { uid, photoURL, displayName, email } = user;
+      createUserRegister({ uid, data: { photoURL, displayName, email } });
+    }
+  }, [logued, user]);
 
   return (
     <div className="main">
