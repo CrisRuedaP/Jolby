@@ -5,3 +5,20 @@
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 600px) {
+  .navbar-nav {
+    display: block;
+    text-align: right;
+  }
+  .header__user {
+    margin-bottom: 1rem;
+  }
+
+  .header__name {
+    color: white;
+    font-weight: 900;
+    font-size: 0.5rem !important;
+    padding-right: 0;
+  }
+}

@@ -13,7 +13,7 @@ const Header = () => {
   const { user, logued } = useContext(Context);
 
   return (
-    <div className="header">
+    <div id="header" className="header">
       <Navbar expand="lg">
         <Container>
           <Navbar.Brand href="#home">

@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Alert from "react-bootstrap/Alert";
 import { useScrollPosition } from "../../hooks/useTrackingScroll";
+import { Context } from "../../context";
+import IconArrow from "../../assets/images/upward-arrow.png";
+import { HashLink as Link } from "react-router-hash-link";
 import "./list-styles.css";
 
 const List = ({ currentJobs, cards }) => {
+  const { query } = useContext(Context);
   const jobs = currentJobs;
   const [splitted, setSplitted] = useState([]);
   const [count, setCount] = useState(1);
@@ -19,6 +23,12 @@ const List = ({ currentJobs, cards }) => {
       splitArray();
     }
   }, [jobs]);
+
+  useEffect(() => {
+    if (query.length === 0) {
+      setCount(1);
+    }
+  }, [query]);
 
   const getScrollPercent = () => {
     const h = document.documentElement,
@@ -74,14 +84,23 @@ const List = ({ currentJobs, cards }) => {
       </Row>
       <div className={"list__btn-container"}>
         {!hideOnScroll && !isNotSplitted && (
-          <Button
-            variant="outline-secondary"
-            className="list__button"
-            disabled={!splitted || count === splitted.length}
-            onClick={fetchMoreListItems}
-          >
-            {count === splitted.length ? "All offers were loaded" : "Load More"}
-          </Button>
+          <>
+            <Button
+              variant="outline-secondary"
+              className="list__button"
+              disabled={!splitted || count === splitted.length}
+              onClick={fetchMoreListItems}
+            >
+              {count === splitted.length
+                ? "All offers were loaded"
+                : "Load More"}
+            </Button>
+            <div className={"list__scroll-up"}>
+              <Link to={"/#header"}>
+                <img src={IconArrow} alt="Icon-scrool-up" />
+              </Link>
+            </div>
+          </>
         )}
       </div>
     </div>

@@ -44,7 +44,7 @@ const CardsJolby = () => {
   useEffect(() => {
     let formatedData = convertData(fetchedjobs);
     setCsvData(formatedData);
-  }, [fetchedjobs]);
+  }, [fetchedjobs, query]);
 
   const findCommonElements = (arr1, arr2) =>
     arr1.some((item) => arr2.includes(item));
