@@ -6,7 +6,7 @@ import Select from "react-select";
 import { techs } from "./options";
 
 const Search = () => {
-  const { setQuery } = useContext(Context);
+  const { setQuery, logued, user } = useContext(Context);
 
   const handleInput = (value = []) => {
     let values = (value || []).map((item) => item.value);
@@ -34,17 +34,19 @@ const Search = () => {
   return (
     <div className="search">
       <Container fluid="md">
-        <Select
-          //defaultValue={[selectorTags[0]]}
-          styles={customStyles}
-          isMulti
-          name="colors"
-          placeholder={"Select Job title or Technology"}
-          options={selectorTags}
-          className="basic-multi-select"
-          classNamePrefix="select"
-          onChange={handleInput}
-        />
+        {logued && user && (
+          <Select
+            //defaultValue={[selectorTags[0]]}
+            styles={customStyles}
+            isMulti
+            name="colors"
+            placeholder={"Select Job title or Technology"}
+            options={selectorTags}
+            className="basic-multi-select"
+            classNamePrefix="select"
+            onChange={handleInput}
+          />
+        )}
       </Container>
     </div>
   );

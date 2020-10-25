@@ -4,9 +4,9 @@ import { Context } from "../../context";
 import JobCard from "./card";
 import Loader from "../loader";
 import Col from "react-bootstrap/Col";
-import Alert from "react-bootstrap/Alert";
 import List from "../List";
 import Csv from "../csv";
+import Info from "../info";
 
 const CardsJolby = () => {
   const { jobs, query, user, logued } = useContext(Context);
@@ -72,7 +72,7 @@ const CardsJolby = () => {
           )}
         </div>
       ) : (
-        <Alert variant={"info"}>Please sign up to see the offers!</Alert>
+        <Info />
       )}
     </>
   );

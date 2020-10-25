@@ -8,6 +8,7 @@ import CardsJolby from "./components/cards";
 import Footer from "./components/footer";
 import Context from "./context";
 import Container from "react-bootstrap/Container";
+import Info from "./components/info";
 
 function App() {
   return (

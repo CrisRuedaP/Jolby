@@ -65,8 +65,8 @@ const Footer = () => {
                   rel="noopener noreferrer"
                 >
                   Marisol Ramírez
-                </a>
-                -
+                </a> {" "}
+                - {" "}
                 <a
                   href="https://twitter.com/dalejohgi"
                   className="footer-link"

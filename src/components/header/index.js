@@ -26,9 +26,6 @@ const Header = () => {
                 <span className="header__name">Hello {user.displayName}!</span>
               </div>
             )}
-            <span className="header__link">
-              <Link to={"/#cards-anchor"}>Find Jobs</Link>
-            </span>
             {logued && user && (
               <span className="header__link darky">
                 <a onClick={() => app.auth().signOut()} key="logout">

@@ -8,7 +8,7 @@ const Csv = ({ data = [] }) => {
 
   return (
     <div className="csv">
-      <CSVLink data={transformedData}>Download this offers in .CSV</CSVLink>
+      <CSVLink data={transformedData}>Download these offers in .CSV</CSVLink>
     </div>
   );
 };
