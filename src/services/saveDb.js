@@ -5,6 +5,9 @@ export const createUserRegister = (user = {}) => {
   usersRef
     .doc(uid)
     .set(data)
+    usersRef
+    .doc(uid)
+    .update({rol: 'student'})
     .then(() => {
       console.log("user registered");
     })
