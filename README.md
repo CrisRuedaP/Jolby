@@ -66,3 +66,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+You can see the app here: [Jolby](https://jolby-front.herokuapp.com/#header)
+and the backend repo here: [backend](https://github.com/dalejohgi/jolby_backend)
