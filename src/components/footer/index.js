@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="footer__up">
         <Nav className="justify-content-center" activeKey="/home">
           <p className="text-center mt-4 mb-4">
-            Jolby By Coderise
+            Jolby By Codemaze
             <br />
             <img className="footer__up-icon" src={Icon_marker} alt={"icon"} />
             Medellin, Colombia
