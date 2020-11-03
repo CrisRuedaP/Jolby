@@ -9,9 +9,9 @@ Jolby is an app where holbies can look for remote job opportunities around the w
 
 ![img](https://i.ibb.co/c3M2Mp1/Screen-Shot-2020-11-03-at-5-54-54-PM.png)
 
-The backend repo here: [backend](https://github.com/dalejohgi/jolby_backend)
-
 You can see the app here: [Jolby](http://www.jolby.rocks/)
+
+The backend repo here: [backend](https://github.com/dalejohgi/jolby_backend)
 
 If you want to know how was the whole process and our experience, you can read here:
 
