@@ -1,71 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+# Jolby 
+![Jolby Logo](https://thirsty-bhaskara-9f8dd9.netlify.app/static/media/logo.2be84f51.png)
+#### The first platform to find remote jobs oportunities that match perfect with holbies profile!
 
-## Available Scripts
+Jolby is an app where holbies can look for remote job opportunities around the whole world exclusively for juniors developers in just one platform, making the process of looking for a job much easier, faster, and productive for juniors like us.This app automates the job hunting for junior developers, finding offers on several web sites, filtering it, and grouping it together on the app.Jolby has been created with the main purpose of helping a lot of peers globally since the fact that it is bringing offers from anywhere in the world for people like us. 
 
-In the project directory, you can run:
+![img](https://i.ibb.co/yW2b35q/Screen-Shot-2020-11-03-at-4-52-16-PM.png)
 
-### `yarn start`
+![img](https://i.ibb.co/6YQvC5m/Screen-Shot-2020-11-03-at-5-02-58-PM.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![img](https://i.ibb.co/P1RJPG9/Screen-Shot-2020-11-03-at-5-05-18-PM.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+You can see the app here: [Jolby](http://www.jolby.rocks/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The backend repo here: [backend](https://github.com/dalejohgi/jolby_backend)
 
-### `yarn build`
+If you want to know how was the whole process and our experience, you can read here:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Stack
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![](https://img.shields.io/badge/-React-blue) 
+![](https://img.shields.io/badge/-React--Bootstrap-blueviolet)
+![](https://img.shields.io/badge/-Node%20JS-green) 
+![](https://img.shields.io/badge/-Express%20JS-red)
+![](https://img.shields.io/badge/-Firebase-yellow)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Architecture
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Authors
+- Cristina Rueda -  [Github](https://github.com/CrisRuedaP)  /  [LinkedIn](https://www.linkedin.com/in/crisruedap/)  
+- Marisol Ramírez -  [Github](https://github.com/Marisol2201)  /  [LinkedIn](https://www.linkedin.com/in/marisolramirezhenao/)
+- David Hincapié - [Github](https://github.com/dalejohgi)  /  [LinkedIn](https://www.linkedin.com/in/dalejohgi/) 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Installation 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Clone the repository.
+- Install the yarn package manager.
+- Create the .env file that contains the environment variables. (Only users authorized to the database)
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- To see the development live, run the `yarn dev` command.
+	`$ yarn dev`
+- Start using Jolby! 🥳
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-You can see the app here: [Jolby](https://jolby-front.herokuapp.com/#header)
-and the backend repo here: [backend](https://github.com/dalejohgi/jolby_backend)
+[MIT](./LICENSE.md) License 2020
