@@ -1,6 +1,10 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 # Jolby 
-![Jolby Logo](https://i.ibb.co/TmhR3w7/logo-jolby.png)
+
+<p align="center">
+<img src="https://i.ibb.co/PwVsr33/jolby.png"/>
+</p>
+
 #### The first platform to find remote jobs oportunities that match perfect with holbies profile!
 
 Jolby is an app where holbies can look for remote job opportunities around the whole world exclusively for juniors developers in just one platform, making the process of looking for a job much easier, faster, and productive for juniors like us.This app automates the job hunting for junior developers, finding offers on several web sites, filtering it, and grouping it together on the app.Jolby has been created with the main purpose of helping a lot of peers globally since the fact that it is bringing offers from anywhere in the world for people like us. 
