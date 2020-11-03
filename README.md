@@ -1,6 +1,4 @@
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 # Jolby 
-
 <p align="center">
 <img src="https://i.ibb.co/PwVsr33/jolby.png"/>
 </p>
@@ -9,16 +7,11 @@
 
 Jolby is an app where holbies can look for remote job opportunities around the whole world exclusively for juniors developers in just one platform, making the process of looking for a job much easier, faster, and productive for juniors like us.This app automates the job hunting for junior developers, finding offers on several web sites, filtering it, and grouping it together on the app.Jolby has been created with the main purpose of helping a lot of peers globally since the fact that it is bringing offers from anywhere in the world for people like us. 
 
-![img](https://i.ibb.co/yW2b35q/Screen-Shot-2020-11-03-at-4-52-16-PM.png)
-
-![img](https://i.ibb.co/6YQvC5m/Screen-Shot-2020-11-03-at-5-02-58-PM.png)
-
-![img](https://i.ibb.co/P1RJPG9/Screen-Shot-2020-11-03-at-5-05-18-PM.png)
-
-
-You can see the app here: [Jolby](http://www.jolby.rocks/)
+![img](https://i.ibb.co/c3M2Mp1/Screen-Shot-2020-11-03-at-5-54-54-PM.png)
 
 The backend repo here: [backend](https://github.com/dalejohgi/jolby_backend)
+
+You can see the app here: [Jolby](http://www.jolby.rocks/)
 
 If you want to know how was the whole process and our experience, you can read here:
 
@@ -34,9 +27,7 @@ If you want to know how was the whole process and our experience, you can read h
 
 ![img](https://i.ibb.co/6gNgW81/stack.png)
 
-
 ## Authors
-
 - Cristina Rueda -  [Github](https://github.com/CrisRuedaP)  /  [LinkedIn](https://www.linkedin.com/in/crisruedap/)  
 - Marisol Ramírez -  [Github](https://github.com/Marisol2201)  /  [LinkedIn](https://www.linkedin.com/in/marisolramirezhenao/)
 - David Hincapié - [Github](https://github.com/dalejohgi)  /  [LinkedIn](https://www.linkedin.com/in/dalejohgi/) 
@@ -55,4 +46,6 @@ If you want to know how was the whole process and our experience, you can read h
 
 ## License
 
-[MIT](./LICENSE.md) License 2020
+[MIT]("./LICENSE.md") License 2020
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) 
