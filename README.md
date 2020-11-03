@@ -28,9 +28,11 @@ If you want to know how was the whole process and our experience, you can read h
 
 ## Architecture
 
+![img](https://i.ibb.co/6gNgW81/stack.png)
 
 
 ## Authors
+
 - Cristina Rueda -  [Github](https://github.com/CrisRuedaP)  /  [LinkedIn](https://www.linkedin.com/in/crisruedap/)  
 - Marisol Ramírez -  [Github](https://github.com/Marisol2201)  /  [LinkedIn](https://www.linkedin.com/in/marisolramirezhenao/)
 - David Hincapié - [Github](https://github.com/dalejohgi)  /  [LinkedIn](https://www.linkedin.com/in/dalejohgi/) 
