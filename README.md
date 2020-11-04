@@ -29,7 +29,7 @@ Jolby is an app where holbies can look for remote job opportunities around the w
 
 <br/> You can see the app here 👉 [Jolby](http://www.jolby.rocks/)
 
-<br/>If you want to know how was the whole process and our experience, you can read here 👉 [Blog]()
+<br/>If you want to know how was the whole process and our experience, you can read here 👉 [Blog](https://www.linkedin.com/pulse/blog-post-jolby-marisol-ram%C3%ADrez-henao/?published=t)
 
 ---
 
@@ -68,14 +68,14 @@ Jolby is an app where holbies can look for remote job opportunities around the w
 
 - Clone the repository.
 - Install the Yarn package manager:<br>
-	`yarn install`
+	`$ yarn install`
 - Create the .env file that contains the environment variables. (Only users authorized to the database)
 
 ---
 
 ## Usage
 
-- To see the development live, run the `yarn dev` command.<br>
+- To see the development live, run the `yarn dev` command:<br>
 	`$ yarn dev`
 - Start using Jolby! 🥳
 
