@@ -8,6 +8,13 @@ import List from "../List";
 import Csv from "../csv";
 import Info from "../info";
 
+
+/**
+ * Function that returns a JSX CardsJolby element
+ * @function Main
+ * @returns {JSX.Elements} HTML cards
+ */
+
 const CardsJolby = () => {
   const { jobs, query, user, logued } = useContext(Context);
   const [fetchedjobs, setJobs] = useState();
@@ -46,9 +53,12 @@ const CardsJolby = () => {
     setCsvData(formatedData);
   }, [fetchedjobs, query]);
 
+  //function that finds the elements in common
+  //in two arrays to filter the information
   const findCommonElements = (arr1, arr2) =>
     arr1.some((item) => arr2.includes(item));
 
+  //Render cards function
   const renderCards = (entries) =>
     (entries || []).map((job, index) => (
       <Col key={index} xs="12" lg="4">

@@ -10,6 +10,8 @@ import Context from "./context";
 import Container from "react-bootstrap/Container";
 import Info from "./components/info";
 
+
+//Application wrapper that displays all components
 function App() {
   return (
     <div className="App">

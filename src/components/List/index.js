@@ -8,6 +8,16 @@ import IconArrow from "../../assets/images/upward-arrow.png";
 import { HashLink as Link } from "react-router-hash-link";
 import "./list-styles.css";
 
+
+/**
+ * Function that returns a JSX element to show the first list
+ * of offers and the scrolling to the next ones.
+ * @function List
+ * @param { currentJobs } array
+ * @param { cards } string
+ * @returns {JSX.Elements} HTML list
+ */
+
 const List = ({ currentJobs, cards }) => {
   const { query } = useContext(Context);
   const jobs = currentJobs;
@@ -30,6 +40,8 @@ const List = ({ currentJobs, cards }) => {
     }
   }, [query]);
 
+  /*Function to get the current percentage of the
+  vertical scroll bar that a user has moved through*/
   const getScrollPercent = () => {
     const h = document.documentElement,
       b = document.body,
@@ -46,6 +58,8 @@ const List = ({ currentJobs, cards }) => {
     percentage > 85 ? setHideOnScroll(false) : setHideOnScroll(true);
   }, [hideOnScroll]);
 
+
+  //Function to display the following list of offers
   const fetchMoreListItems = () => {
     if (count <= splitted.length) {
       setCount(count + 1);
@@ -57,6 +71,7 @@ const List = ({ currentJobs, cards }) => {
     setHideOnScroll(true);
   };
 
+  //Function to split the offers into arrays of 12 elements
   const splitArray = () => {
     const chunkSize = 12;
     const arr = jobs ? jobs : [];

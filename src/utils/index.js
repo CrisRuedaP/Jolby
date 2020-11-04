@@ -1,3 +1,4 @@
+//Function to configure the dates the offers were posted 
 export const setDate = (time) => {
   const currentDate = new Date(time);
 

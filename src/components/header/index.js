@@ -9,6 +9,12 @@ import { HashLink as Link } from "react-router-hash-link";
 import { Context } from "../../context";
 import { app } from "../../firebaseConfig";
 
+/**
+ * Function that returns a JSX header element
+ * @function Header
+ * @returns {JSX.Elements} HTML header
+ */
+
 const Header = () => {
   const { user, logued } = useContext(Context);
 

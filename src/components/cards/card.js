@@ -1,7 +1,20 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-//import { setDate } from "../../utils";
+
+
+/**
+ * Function that displays the Job cards with the parameters it receives
+ * @function JobCard
+ * @param { title } string 
+ * @param { id } string
+ * @param { company } string
+ * @param { image } string
+ * @param { tags } array
+ * @param { time } string
+ * @param { applyLink } string
+ * @returns {JSX.Elements} HTML jobCard
+ */
 
 const JobCard = ({
   title,

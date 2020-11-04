@@ -8,6 +8,14 @@ import download from "../../assets/images/download.png";
 import check from "../../assets/images/check.png";
 import "./info-styles.css";
 
+
+/**
+ * Function that returns a JSX element that shows
+ * the features of the application on the initial page.
+ * @function Info
+ * @returns {JSX.Elements} HTML info
+ */
+
 const Info = () => {
   return (
     <div className="info">

@@ -1,3 +1,5 @@
+//Function that makes the call to the API
+
 const getJobs = async () => {
   const requestOptions = {
     method: "GET",

@@ -1,3 +1,4 @@
+//Firebase configuration to store authenticated user data
 import { firestore } from "../firebaseConfig";
 export const createUserRegister = (user = {}) => {
   let { uid, data } = user;

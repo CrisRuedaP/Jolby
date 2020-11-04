@@ -11,6 +11,12 @@ import { app, googleAuthProvider } from "../../firebaseConfig";
 import { Context } from "../../context";
 import { createUserRegister } from "../../services/saveDb";
 
+/**
+ * Function that returns a JSX main element
+ * @function Main
+ * @returns {JSX.Elements} HTML main
+ */
+
 const Main = () => {
   const { user, logued } = useContext(Context);
   const [error, setError] = useState("");

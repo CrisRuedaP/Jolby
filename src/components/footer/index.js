@@ -7,6 +7,13 @@ import Icon_copyright from "../../assets/images/copyright.png";
 import Icon_heart from "../../assets/images/heart.png";
 import Icon_marker from "../../assets/images/marker.png";
 
+
+/**
+ * Function that returns a JSX footer element
+ * @function footer
+ * @returns {JSX.Elements} HTML footer
+ */
+
 const Footer = () => {
   return (
     <div className="footer">

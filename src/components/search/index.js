@@ -5,9 +5,16 @@ import { Context } from "../../context";
 import Select from "react-select";
 import { techs } from "./options";
 
+/**
+ * Function that returns a JSX search element to
+ * filter job postings by role or technology
+ * @function Search
+ * @returns {JSX.Elements} HTML search field
+ */
+
 const Search = () => {
   const { setQuery, logued, user } = useContext(Context);
-
+  //function that handles inputs in the search field
   const handleInput = (value = []) => {
     let values = (value || []).map((item) => item.value);
     setQuery(values);
